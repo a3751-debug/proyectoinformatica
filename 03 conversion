@@ -1,0 +1,22 @@
+// Online C compiler (editor)
+// Write and run C online using this editor.
+
+#include <stdio.h>
+
+int main() {
+
+    float cm;
+    printf("Ingresa los cm");
+    scanf("%f", &cm);
+
+    float pulgada;
+    pulgada = cm / 2.54;
+
+    float pie;
+    pie = cm/30.48;
+    printf("los pies son: %f",pie); 
+    
+printf("Las pulgadas son: %f",pulgada); 
+    
+    
+}
