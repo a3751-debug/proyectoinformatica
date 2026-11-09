@@ -1,20 +1,17 @@
-//DATOS PERSONALES:
 
-//Leer el nombre y el apellido de una persona, su año de nacimiento y el año actual.
-//Mostrar el nombre en formato “Apellido, Nombre” y su edad.
-
+//TEMPERATURA: Leer una temperatura en grados Celsius y mostrarla en Fahrenheit y en Kelvin.
 #include <stdio.h>
 main () {
-//DATOS
-char NOMBRE [7]= "ahhhhh";
-char APELLIDO [7]= "fort";
-int YEAR= 2026;
-int NACIMIENTO= 1999;
-//OPERACION
-int EDAD;
-EDAD= YEAR-NACIMIENTO;
-//MOSTRAR DATOS
-printf("\nAPELLIDO: %s", APELLIDO);
-printf("\nNOMBRE: %s", NOMBRE);
-printf("\nEDAD: %d", EDAD);
+//PEDIR TEMPERATURA en celsius
+printf("INGRESAR TEMPERATURA [C]:");
+float Tcelsius;
+scanf("%f", &Tcelsius);
+//CONVERSIONES
+float Tfahrenheit;
+float Tkelvin;
+Tfahrenheit= (Tcelsius*1.8)+32;
+Tkelvin= (Tcelsius-273.15);
+//RESULTADOS DE LAS CONVERSIONES
+printf("\nLa temperatura en Fahrenheit [F]: %.2f", Tfahrenheit);
+printf("\nLa temperatura en Kelvin [K]: %.2f", Tkelvin);
 }
